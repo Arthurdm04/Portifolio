@@ -144,7 +144,7 @@ a:hover{color:var(--brand); text-decoration:underline}
   .grid.skills{grid-template-columns:1fr}
 }
 
-/* ===== Links base (sobrescreve o que veio antes) ===== */
+/* ===== Links base  ===== */
 a {
   color: color-mix(in srgb, var(--brand) 85%, #ffffff 0%);
   text-decoration: none;
@@ -157,8 +157,6 @@ a:hover {
   text-decoration: none; /* garante que não apareça underline padrão */
 }
 
-/* ===== Hover com sublinhado animado para links de texto ===== */
-/* aplica nos links dos cards (.actions a) e rodapé (.foot .links a) */
 .actions a,
 .foot .links a {
   position: relative;
