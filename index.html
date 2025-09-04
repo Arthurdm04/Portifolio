@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfólio de Arthur Dias Moresco — projetos em Web e Python." />
+  <title>Arthur Dias Moresco — Portfólio</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/dev_2_white.png" type="image/x-icon">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#home">Arthur <span>Dias Moresco</span></a>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a class="btn" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-text">
+        <span class="kicker">Sempre aprendendo e construindo</span>
+        <h1>Oi, eu sou o <span class="grad">Arthur</span> — dev em formação focado em <strong>Web</strong> e <strong>Python</strong>.</h1>
+        <p class="lead">Aqui compartilho projetos reais e minha evolução no código.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projetos">Ver projetos</a>
+          <a class="btn ghost" href="#sobre">Sobre mim</a>
+        </div>
+        <ul class="quick-list">
+          <li>🔧 GMS Agrícola — site institucional</li>
+          <li>🧰 Portfólio pessoal — este site (HTML/CSS/JS)</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="card stat">
+          <span class="stat-num">6º</span>
+          <span class="stat-label">período</span>
+        </div>
+        <div class="card stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">projetos</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section container">
+      <div class="section-head">
+        <h2>Projetos em destaque</h2>
+        <p class="muted">Seleção enxuta com links.</p>
+      </div>
+
+      <div class="grid projects">
+        <!-- Projeto 1: GMS -->
+        <article class="card project">
+          <div class="tag">Web</div>
+          <h3>GMS Agrícola</h3>
+          <p>Site institucional responsivo, com foco em performance.</p>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+          <div class="actions">
+            <a href="https://arthurdm04.github.io/GMS/" target="_blank" rel="noreferrer">Ver online</a>
+            <a href="https://github.com/Arthurdm04/GMS" target="_blank" rel="noreferrer">Repositório</a>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Portfólio -->
+        <article class="card project">
+          <div class="tag">Front‑end</div>
+          <h3>Portfólio Pessoal</h3>
+          <p>Este site: layout responsivo, grid de projetos, menu mobile e boas práticas de estilos.</p>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="actions">
+            <a href="#home">Ver página</a>
+            <a href="#" target="_blank" rel="noreferrer">Repositório</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container">
+      <div class="section-head"><h2>Sobre</h2></div>
+      <div class="card about">
+        <p>Sou estudante de Ciência da Computação (6º período) e estagiário em TI. Gosto de aprender construindo projetos reais e resolvendo problemas do dia a dia. Tenho interesse em front-end, Python e também venho explorando DevOps (Azure e containers).</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-head"><h2>Skills & Ferramentas</h2></div>
+      <div class="grid skills">
+        <span class="pill">Front‑end (iniciante)</span>
+        <span class="pill">HTML & CSS</span>
+        <span class="pill">JavaScript (básico)</span>
+        <span class="pill">Python (básico)</span>
+        <span class="pill">SQL (básico)</span>
+        <span class="pill">Git & GitHub</span>
+      </div>
+    </section>
+
+   <!-- <section id="timeline" class="section container">
+      <div class="section-head"><h2>Timeline</h2></div>
+      <div class="timeline">
+        <div class="dotline"></div>
+        <article class="titem">
+          <div class="tdate">2025</div>
+          <div class="tcard card">Estágio: vi Banco de Dados, SQLServer, containers do Docker e criação de sistemas.</div>
+        </article>
+        <article class="titem">
+          <div class="tdate">2025</div>
+          <div class="tcard card">Projeto em Python: paralelismo, speedup e gráficos.</div>
+        </article>
+      </div>
+    </section>
+-->
+    <section id="contato" class="section container">
+      <div class="section-head">
+        <h2>Contato</h2>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Arthurdm04" target="_blank" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"/></a>
+        <a href="https://www.linkedin.com/in/arthur-moresco-7ab057247" target="_blank" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"/></a>
+        <a href="https://www.instagram.com/arthurdm04?igsh=MW56ODRiMXNiNXJjcQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"/></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <span>© <span id="yr"></span> Arthur Dias Moresco</span>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
