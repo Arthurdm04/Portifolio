@@ -196,3 +196,44 @@ a:hover {
   border-radius: 6px;
 }
 
+/* ===== Mobile fixes ===== */
+
+/* evita qualquer scroll lateral acidental */
+html, body { overflow-x: hidden; }
+
+/* imagens/ícones nunca estouram a largura */
+img, svg { max-width: 100%; height: auto; }
+
+/* tablet e celulares maiores */
+@media (max-width: 768px){
+  .container{ padding: 0 16px; }
+
+  .section{ padding: 32px 0; }
+
+  .hero{ padding: 32px 0 8px; }
+  .hero h1{ font-size: clamp(26px, 8vw, 36px); }
+  .lead{ font-size: 16px; }
+  .cta{ flex-wrap: wrap; gap: 10px; }
+
+  /* deixa a arte do hero menor e os badges mais discretos */
+  .hero-art{ min-height: 180px; }
+  .stat{ transform: scale(.9); }
+}
+
+/* celulares pequenos (≤ 480px) */
+@media (max-width: 480px){
+  .kicker{ font-size: 11px; padding: 5px 9px; }
+  .btn{ padding: 10px 12px; }
+  .hero h1{ font-size: clamp(24px, 9vw, 32px); }
+
+  /* skills vira 1 coluna para caber bem */
+  .grid.skills{ grid-template-columns: 1fr; }
+
+  /* menu mobile abre com largura confortável */
+  .menu.open{
+    left: 16px;
+    right: 16px;
+  }
+}
+
+
