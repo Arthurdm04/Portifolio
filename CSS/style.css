@@ -94,8 +94,39 @@ a:hover{color:var(--brand); text-decoration:underline}
 .about{padding:20px}
 
 /* Skills */
-.grid.skills{display:grid; grid-template-columns:repeat(4, 1fr); gap:14px}
-.pill{padding:10px 12px; border-radius:999px; border:1px dashed color-mix(in srgb, var(--text) 20%, transparent); text-align:center}
+.grid.skills{
+  display:grid;
+  /* de 4 colunas fixas -> colunas fluidas */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:14px;
+}
+
+.pill{
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px dashed color-mix(in srgb, var(--text) 20%, transparent);
+  text-align:center;
+  font-weight:600;
+}
+
+/* LABEL de categoria */
+.pill-label{
+  grid-column:1 / -1; /* ocupa a linha inteira */
+  justify-self:start;
+  border:1px dashed color-mix(in srgb, var(--text) 35%, transparent);
+  opacity:.7;
+  cursor:default;
+  pointer-events:none; /* sem hover/click */
+  padding:10px 14px;
+  font-weight:700;
+}
+
+/* hover só nas pills normais (opcional) */
+.pill:not(.pill-label):hover{
+  border-style:solid;
+  border-color: color-mix(in srgb, var(--text) 50%, transparent);
+}
+
 
 /* Timeline */
 .timeline{position:relative; display:grid; gap:16px}
